@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextNIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NIM"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <EditText
+        android:id="@+id/editTextProgstud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Program Studi"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <EditText
+        android:id="@+id/editTextAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <EditText
+        android:id="@+id/editTextTanggalLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Lahir"
+        android:focusable="false"
+        android:onClick="showDatePickerDialog"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Jenis Kelamin"
+            android:textSize="16sp"
+            android:layout_marginVertical="8dp"
+            android:fontFamily="@font/poppins_medium"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupJenisKelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonPria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pria"
+            android:checked="true"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonWanita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wanita"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_medium"/>
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
