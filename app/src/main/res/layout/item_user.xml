@@ -69,5 +69,12 @@
             android:textSize="16sp"
             android:fontFamily="@font/poppins_medium" />
 
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hapus data" />
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>
